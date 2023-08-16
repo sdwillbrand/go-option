@@ -4,8 +4,8 @@ type Option[T any] struct {
 	value *T
 }
 
-func None[T any]() Option[T] {
-	return Option[T]{value: nil}
+func None() Option[any] {
+	return Option[any]{value: nil}
 }
 
 func Some[T any](value T) Option[T] {
