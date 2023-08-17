@@ -4,8 +4,8 @@ type Option[T any] struct {
 	value *T
 }
 
-func None() Option[any] {
-	return Option[any]{value: nil}
+func None[T any]() Option[T] {
+	return Option[T]{value: nil}
 }
 
 func Some[T any](value T) Option[T] {
@@ -44,9 +44,9 @@ func (o Option[T]) Expect(err string) T {
 	}
 }
 
-func (o Option[T]) Replace(value T) Option[T] {
+func (o *Option[T]) Replace(value T) Option[T] {
 	o.value = &value
-	return o
+	return *o
 }
 
 func (o Option[T]) Clone() Option[T] {
