@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	opt "github.com/countersoda/go-opt"
+	opt "github.com/countersoda/go-option"
 )
 
 func TestOption(t *testing.T) {

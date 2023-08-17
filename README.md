@@ -1,4 +1,4 @@
-# go-opt: Golang Option API
+# go-option: Golang Option API
 
 ## Table of Contents
 
@@ -35,11 +35,11 @@
 
 ## 1. Introduction
 
-Welcome to the go-opt documentation! go-opt is a Golang option API inspired by the Rust Option API. It provides the `Option` struct, a wrapper around a value that allows you to perform various operations to handle optional values gracefully.
+Welcome to the go-option documentation! go-option is a Golang option API inspired by the Rust Option API. It provides the `Option` struct, a wrapper around a value that allows you to perform various operations to handle optional values gracefully.
 
 ### 1.1 Purpose
 
-go-opt aims to bring the powerful features of the Rust Option API to Golang developers. By providing methods to handle optional values, go-opt simplifies the way you work with potentially absent data, enhancing code readability and maintainability.
+go-option aims to bring the powerful features of the Rust Option API to Golang developers. By providing methods to handle optional values, go-option simplifies the way you work with potentially absent data, enhancing code readability and maintainability.
 
 ### 1.2 Features
 
@@ -54,7 +54,7 @@ go-opt aims to bring the powerful features of the Rust Option API to Golang deve
 ### 1.3 Project Structure
 
 ```
-go-opt/
+go-option/
 |-- example/
 |   |-- main.go
 |-- tests/
@@ -68,8 +68,8 @@ go-opt/
 ```
 
 - `option.go`: Defines the `Option` struct and its methods.
-- `example`: Contains an example usage of go-opt.
-- `tests`: Unit tests for the go-opt library.
+- `example`: Contains an example usage of go-option.
+- `tests`: Unit tests for the go-option library.
 - `LICENSE`: The project's license information.
 - `README.md`: The main documentation file.
 
@@ -79,22 +79,22 @@ go-opt/
 
 ### 2.1 Installation
 
-To use go-opt in your project, use the `go get` command:
+To use go-option in your project, use the `go get` command:
 
 ```sh
-go get github.com/countersoda/go-opt
+go get github.com/countersoda/go-option
 ```
 
 ### 2.2 Usage Example
 
-Here's a basic example of how to use go-opt in your application:
+Here's a basic example of how to use go-option in your application:
 
 ```go
 package main
 
 import (
 	"fmt"
-	"github.com/countersoda/go-opt"
+	"github.com/countersoda/go-option"
 )
 
 func main() {
@@ -120,7 +120,7 @@ func main() {
 
 ### 3.1 Option Struct
 
-The `Option` struct is the core type provided by go-opt. It wraps a value of any type and provides methods for value extraction and manipulation. The `Option` type can be constructed using the `Some` and `None` constructor functions.
+The `Option` struct is the core type provided by go-option. It wraps a value of any type and provides methods for value extraction and manipulation. The `Option` type can be constructed using the `Some` and `None` constructor functions.
 
 ### 3.2 `Some(value T) Option[T]`
 
@@ -236,7 +236,7 @@ The `Clone` method creates a new `Option` instance with the same value as the or
 
 ## 4. Contributing
 
-Contributions to go-opt are welcome! If you encounter any bugs or have ideas for improvements, please follow the guidelines below.
+Contributions to go-option are welcome! If you encounter any bugs or have ideas for improvements, please follow the guidelines below.
 
 ### 4.1 Bug Reports and Feature Requests
 
@@ -244,7 +244,7 @@ If you find a bug or have a feature request, please open an issue on the project
 
 ### 4.2 Pull Requests
 
-If you want to contribute code to go-opt, follow these steps:
+If you want to contribute code to go-option, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
@@ -257,8 +257,8 @@ We will review your pull request and provide feedback as needed.
 
 ## 5. License
 
-go-opt is licensed under the [MIT License](LICENSE).
+go-option is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feel free to explore, use, and contribute to the go-opt project. Happy coding with enhanced optional value handling! 🚀
+Feel free to explore, use, and contribute to the go-option project. Happy coding with enhanced optional value handling! 🚀

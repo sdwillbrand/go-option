@@ -1,3 +1,3 @@
-module github.com/countersoda/go-opt
+module github.com/countersoda/go-option
 
 go 1.20

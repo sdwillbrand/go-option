@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	opt "github.com/countersoda/go-opt"
+	opt "github.com/countersoda/go-option"
 )
 
 func main() {
