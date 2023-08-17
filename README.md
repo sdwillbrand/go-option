@@ -17,7 +17,7 @@
    - 3.3 `None() Option`
    - 3.4 `Unwrap() T`
    - 3.5 `UnwrapOr(def T) T`
-   - 3.6 `UnwrapOrDefault(f func() T) T`
+   - 3.6 `UnwrapOrDefault() T`
    - 3.7 `IsSome() bool`
    - 3.8 `IsNone() bool`
    - 3.9 `IsSomeAnd(predicate func(T) bool) bool`
@@ -55,14 +55,16 @@ go-opt aims to bring the powerful features of the Rust Option API to Golang deve
 
 ```
 go-opt/
-|-- option.go
-|-- LICENSE
-|-- README.md
 |-- example/
 |   |-- main.go
 |-- tests/
-|   |-- go-opt_test.go
+|   |-- option_test.go
 |-- .gitignore
+|-- LICENSE
+|-- README.md
+|-- go.mod
+|-- go.sum
+|-- option.go
 ```
 
 - `option.go`: Defines the `Option` struct and its methods.
@@ -103,7 +105,7 @@ func main() {
 	fmt.Println(someOpt.Unwrap()) // Output: 42
 
 	// Create an Option with no value
-	noneOpt := opt.None()
+	noneOpt := opt.None[any]()
 
 	// Check if it's None
 	if noneOpt.IsNone() {
@@ -196,7 +198,7 @@ The `IsSomeAnd` method checks if the `Option` contains a value and the provided 
 
 - `bool`: `true` if the `Option` contains a value and the predicate is `true`, `false` otherwise.
 
-### 3.10 `Replace(value T) Option`
+### 3.10 `Replace(value T) Option[T]`
 
 The `Replace` method replaces the value inside the `Option` with the provided value.
 
