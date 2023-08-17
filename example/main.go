@@ -14,7 +14,7 @@ func main() {
 	fmt.Println(someOpt.Unwrap()) // Output: 42
 
 	// Create an Option with no value
-	noneOpt := opt.None()
+	noneOpt := opt.None[any]()
 
 	// Check if it's None
 	if noneOpt.IsNone() {
