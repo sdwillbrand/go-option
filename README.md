@@ -82,7 +82,7 @@ go-option/
 To use go-option in your project, use the `go get` command:
 
 ```sh
-go get github.com/countersoda/go-option
+go get github.com/sdwillbrand/go-option
 ```
 
 ### 2.2 Usage Example
@@ -94,7 +94,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/countersoda/go-option"
+	"github.com/sdwillbrand/go-option"
 )
 
 func main() {
